@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         borderRadius: 6,
         elevation: 3,
-        shadowColor: GlobalStyles.colors.gray500,
+        shadowColor: GlobalStyles.colors.primary800,
         shadowRadius: 4,
         shadowOffset: { width: 1, height: 1 },
         shadowOpacity: 4,
