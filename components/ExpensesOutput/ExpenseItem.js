@@ -35,17 +35,19 @@ const styles = StyleSheet.create({
         opacity: 0.75
     },
     expenseItem: {
-        padding: 12,
-        marginVertical: 8,
-        backgroundColor: GlobalStyles.colors.primary500,
+        padding: 18,
+        overflow: 'visible',
+        marginHorizontal: 8,
+        marginVertical: 10,
+        backgroundColor: 'white',
         flexDirection: 'row',
         justifyContent: 'space-between',
         borderRadius: 6,
-        elevation: 3,
-        shadowColor: GlobalStyles.colors.primary800,
-        shadowRadius: 4,
+        elevation: 2,
+        shadowColor: GlobalStyles.colors.gray,
+        shadowRadius: 8,
         shadowOffset: { width: 1, height: 1 },
-        shadowOpacity: 4,
+        shadowOpacity: 0.2,
         minWidth: 100
     },
     textBase: {
@@ -53,7 +55,7 @@ const styles = StyleSheet.create({
     },
     description: {
         fontSize: 16,
-        marginBottom: 4,
+        marginBottom: 8,
         fontWeight: 'bold'
     },
     amountContainer: {
@@ -65,7 +67,8 @@ const styles = StyleSheet.create({
         borderRadius: 4
     },
     amount: {
-        color: GlobalStyles.colors.primary500,
-        fontWeight: 'bold'
+        color: GlobalStyles.colors.primary600,
+        fontWeight: 'bold',
+        fontSize: 15
     }
 });

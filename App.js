@@ -19,10 +19,11 @@ function ExpensesOverview() {
   return (
     <BottomTabs.Navigator
       screenOptions={({ navigation }) => ({
-        headerStyle: { backgroundColor: GlobalStyles.colors.primary500 },
-        headerTintColor: "white",
-        tabBarStyle: { backgroundColor: GlobalStyles.colors.primary500 },
-        tabBarActiveTintColor: 'white',
+        // headerStyle: { backgroundColor: GlobalStyles.colors.primary500 },
+        headerTintColor: "black",
+        // tabBarStyle: { backgroundColor: GlobalStyles.colors.primary500 },
+        tabBarActiveTintColor: GlobalStyles.colors.primary600,
+        tabBarStyle: { padding: 10 },
         headerRight: ({ tintColor }) => (
           <IconButton
             icon="add"
@@ -41,7 +42,7 @@ function ExpensesOverview() {
           title: "Recent Expenses",
           tabBarLabel: "Recent",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="hourglass" size={size} color={color} />
+            <Ionicons name="hourglass" size={26} color={color} />
           ),
         }}
       />
@@ -52,7 +53,7 @@ function ExpensesOverview() {
           title: "All Expenses",
           tabBarLabel: "All",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="calendar" size={size} color={color} />
+            <Ionicons name="calendar" size={26} color={color} />
           ),
         }}
       />
@@ -63,12 +64,12 @@ function ExpensesOverview() {
 export default function App() {
   return (
     <>
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
       <ExpensesContextProvider>
         <NavigationContainer>
           <Stack.Navigator screenOptions={{
-            headerStyle: { backgroundColor: GlobalStyles.colors.primary500 },
-            headerTintColor: 'white'
+            headerStyle: { backgroundColor: GlobalStyles.colors.appBackground },
+            headerTintColor: 'black'
           }}>
             <Stack.Screen
               name="ExpensesOverview"

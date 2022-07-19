@@ -26,12 +26,12 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     period: {
-        fontSize: 12,
-        color: GlobalStyles.colors.primary400
+        fontSize: 20,
+        fontWeight: 'bold'
     },
     sum: {
-        fontSize: 16,
+        fontSize: 20,
         fontWeight: 'bold',
-        color: GlobalStyles.colors.primary500
+        color: GlobalStyles.colors.primary600
     }
 });

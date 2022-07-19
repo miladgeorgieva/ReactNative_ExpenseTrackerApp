@@ -23,15 +23,16 @@ export default ExpensesOutput;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingHorizontal: 24,
+        paddingHorizontal: 20,
         paddingTop: 24,
         paddingBottom: 0,
-        backgroundColor: GlobalStyles.colors.primary700,
+        overflow: 'visible'
     },
     infoText: {
-        color: 'white',
-        fontSize: 16,
+        color: 'black',
+        fontSize: 18,
         textAlign: 'center',
-        marginTop: 32
+        marginTop: 32,
+        fontWeight: 'bold'
     }
 });
