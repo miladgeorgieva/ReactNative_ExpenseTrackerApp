@@ -11,7 +11,7 @@ function ManageExpenses({ route, navigation }) {
 
     const editedExpenseId = route.params?.expenseId;
     const isEditing = !!editedExpenseId; // the "!!" converts to boolean
-const selectedExpense = expensesCtx.expenses.find((expense) => expense.id === editedExpenseId)
+    const selectedExpense = expensesCtx.expenses.find((expense) => expense.id === editedExpenseId)
 
     useLayoutEffect(() => {
         navigation.setOptions({
@@ -47,7 +47,7 @@ const selectedExpense = expensesCtx.expenses.find((expense) => expense.id === ed
                 submitButtonLabel={isEditing ? 'Update' : 'Add'} />
             {isEditing && (
                 <View style={styles.deleteContainer}>
-                    <IconButton icon="trash" size={36} onPress={deleteExpenseHandler} color={GlobalStyles.colors.error} />
+                    <IconButton text="Delete" icon="trash" size={20} onPress={deleteExpenseHandler} color={GlobalStyles.colors.error} />
                 </View>
             )}
         </View>
@@ -65,8 +65,6 @@ const styles = StyleSheet.create({
     deleteContainer: {
         marginTop: 16,
         paddingTop: 8,
-        borderTopWidth: 1,
-        borderTopColor: GlobalStyles.colors.primary800,
         alignItems: 'center'
     }
 });

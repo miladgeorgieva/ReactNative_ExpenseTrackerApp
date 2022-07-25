@@ -116,7 +116,7 @@ export default ExpenseForm;
 
 const styles = StyleSheet.create({
     form: {
-        marginBottom: 40
+        marginBottom: 10
     },
     title: {
         fontWeight: 'bold',
