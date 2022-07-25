@@ -16,7 +16,8 @@ export const GlobalStyles = {
         primary600: '#7559c2',
         primary500: '#a493cf',
         primary200: '#cdc0f0',
-        gray: '#8a8a8a',
+        gray500: '#8a8a8a',
+        gray800: '#222222',
         appBackground: '#f2f2f2',
         error: '#9b095c'
     }
