@@ -41,8 +41,6 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
         const dateIsValid = expenseData.date.toString() !== 'Invalid Date';
         const descriptionIsValid = expenseData.description.trim().length > 0;
 
-       console.log(expenseData.date.toString());
-
         if (!amountIsValid || !dateIsValid || !descriptionIsValid) {
             // Alert.alert('Invalid input', 'Please check your input values! Maybe you missed an input?');
             setInputs((currentInputs) => {
